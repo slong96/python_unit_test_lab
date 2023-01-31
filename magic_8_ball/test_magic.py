@@ -15,3 +15,11 @@ extract_answer_from_response
  of your ideas now. We'll talk about ways to test other aspects of this program in class.
 
 """
+
+from unittest import TestCase
+import functions_magic
+
+class TestFunctions(TestCase):
+
+  def test_generate_url(self):
+    self.assertTrue(functions_magic.generate_url_for_question(str))
